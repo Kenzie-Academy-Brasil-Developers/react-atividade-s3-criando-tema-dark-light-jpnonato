@@ -1,6 +1,6 @@
 import { CardMain, MainDiv, Button, Section } from './styles'
-import { useState } from 'react'
 import { UseList } from '../../providers/ListProvider'
+
 
 
 
@@ -14,7 +14,6 @@ const Card = () => {
     
     return(
         <>
-       
         <MainDiv theme={theme}>
             <Section>
                 <Button onClick={chnageTheme} theme={theme}>Dark mode</Button>

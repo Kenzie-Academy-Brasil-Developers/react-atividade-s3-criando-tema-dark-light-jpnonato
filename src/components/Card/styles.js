@@ -7,9 +7,8 @@ export const CardMain = styled.div`
     height: 150px;
     background-color: ${(props) => props.theme === 'ligth'? 'antiquewhite' : 'black'};
     color: ${(props) => props.theme === 'ligth'? 'black' : 'white'};
-    border: none;
+    border: ${(props) => props.theme === 'ligth'? 'black solid' : 'white solid'};
     border-radius: 4px;
-    box-shadow: black 2px 2px 2px 1px;
     margin: 5px 0px 5px 0px;
 
         h2{
@@ -30,7 +29,7 @@ export const CardMain = styled.div`
 
 export const MainDiv = styled.div`
     width: 100vw;
-    background-color: #b65408;
+    background-color: ${(props) => props.theme === 'ligth'? '#b65408' : 'black'};
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -42,9 +41,9 @@ export const MainDiv = styled.div`
 
 export const Button = styled.button`
    padding: 12px;
-   background-color: beige;
-   color: black;
-   border: none;
+   background-color: ${(props) => props.theme === 'ligth'? 'beige' : 'black'};
+   color: ${(props) => props.theme === 'ligth'? 'black' : 'white'};
+   border: ${(props) => props.theme === 'ligth'? 'none' : 'white solid '};
    border-radius: 4px;
    margin-bottom: 15px;
    box-shadow: black 0px 3px 1px 0px;
